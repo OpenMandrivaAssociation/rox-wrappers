@@ -3,7 +3,7 @@
 Summary:	A collection of ROX Wrapper scripts.
 Name:		rox-wrappers
 Version:	0.1
-Release:	4mdk
+Release:	%mkrel 4
 Group:		Graphical desktop/Other
 License:	GPL
 URL:		http://rox.sourceforge.net
