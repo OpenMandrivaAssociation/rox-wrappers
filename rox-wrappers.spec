@@ -1,6 +1,6 @@
 %define _appsdir %{_libdir}/apps
 
-Summary:	A collection of ROX Wrapper scripts.
+Summary:	A collection of ROX Wrapper scripts
 Name:		rox-wrappers
 Version:	0.1
 Release:	%mkrel 5
@@ -37,7 +37,7 @@ applications.
 #
 # Multimedia
 %package multimedia
-Summary:  A collection of ROX Wrapper scripts for multimedia applications.
+Summary:  A collection of ROX Wrapper scripts for multimedia applications
 Group:	  Graphical desktop/Other
 Requires: rox
 
@@ -55,7 +55,7 @@ applications.
 #
 # Networking
 %package networking
-Summary:  A collection of ROX Wrapper scripts for networking applications.
+Summary:  A collection of ROX Wrapper scripts for networking applications
 Group:	  Graphical desktop/Other
 Requires: rox
 
@@ -74,7 +74,7 @@ applications.
 #
 # Office
 %package office
-Summary:  A collection of ROX Wrapper scripts for office applications.
+Summary:  A collection of ROX Wrapper scripts for office applications
 Group:	  Graphical desktop/Other
 Requires: rox
 
@@ -92,7 +92,7 @@ applications.
 #
 # Text tools
 %package texttools
-Summary:  A collection of ROX Wrapper scripts for text editors/viewers.
+Summary:  A collection of ROX Wrapper scripts for text editors/viewers
 Group:	  Graphical desktop/Other
 Requires: rox
 
@@ -110,7 +110,7 @@ editors/viewers.
 #
 # Utilities
 %package utils
-Summary:  A collection of ROX Wrapper scripts for various utilities.
+Summary:  A collection of ROX Wrapper scripts for various utilities
 Group:	  Graphical desktop/Other
 Requires: rox
 
