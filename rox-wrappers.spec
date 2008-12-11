@@ -21,7 +21,7 @@ Source10:	appmenu_convert.pl.bz2
 Patch0:		Wrappers-AppRun-patch
 Patch1:		Antiword-AppRun-patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:  ImageMagick
+BuildRequires:  imagemagick
 BuildArchitectures: noarch
 
 %description
