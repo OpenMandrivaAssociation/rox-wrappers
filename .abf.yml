@@ -1,12 +1,14 @@
 sources:
-  "Antiword.tar.bz2:"	9b52002cdb121ccfc3848aba3c9af1a7ff50b80a
-  "appmenu_convert.pl.bz2:"	ca9f1d534423d61e5d4738e21dc3e10c75d17131
-  "Display.tar.bz2:"	3e964d4fd776b26067d583dc714b5620d2b83dfb
-  "Drives.tar.bz2:"	518211f4f59301c9ba64f93cef860c824d5130db
-  "LaTeX.tar.bz2:"	cbed17585c458d686985bd23951328bd601667ad
-  "roxstuff.tar.bz2:"	468a285a04e6aebb88c4d147e22815c2bb1856d3
-  "Wrappers.tar.bz2:"	b1d175a3ad10cda120a3928f9e71fccaf556df83
-  "XDvi.tar.bz2:"	5568b3cd917d2ebc9875d141cbf19209ec24999d
-  "XEmacs.tar.bz2:"	bf59d1b456f11d4abe66beb8380f78181fe795cc
-  "xTerminal.tar.bz2:"	b1a6e1352270fd3055e3e745181c2dc4a1dc1e5d
-  "XV.tar.bz2:"	245cf8ab0d635844b501506d5615e390d327cd74
+  "Antiword-AppRun-patch.bz2": 7c0bc35a29c4f8b0dd9129bb22dd240f0619adbc
+  "Antiword.tar.bz2": 9b52002cdb121ccfc3848aba3c9af1a7ff50b80a
+  "Display.tar.bz2": 3e964d4fd776b26067d583dc714b5620d2b83dfb
+  "Drives.tar.bz2": 518211f4f59301c9ba64f93cef860c824d5130db
+  "LaTeX.tar.bz2": cbed17585c458d686985bd23951328bd601667ad
+  "Wrappers-AppRun-patch.bz2": 0816e0374fdbf77302e744d96d6a25f248eb2677
+  "Wrappers.tar.bz2": b1d175a3ad10cda120a3928f9e71fccaf556df83
+  "XDvi.tar.bz2": 5568b3cd917d2ebc9875d141cbf19209ec24999d
+  "XEmacs.tar.bz2": bf59d1b456f11d4abe66beb8380f78181fe795cc
+  "XV.tar.bz2": 245cf8ab0d635844b501506d5615e390d327cd74
+  "appmenu_convert.pl.bz2": ca9f1d534423d61e5d4738e21dc3e10c75d17131
+  "roxstuff.tar.bz2": 468a285a04e6aebb88c4d147e22815c2bb1856d3
+  "xTerminal.tar.bz2": b1a6e1352270fd3055e3e745181c2dc4a1dc1e5d

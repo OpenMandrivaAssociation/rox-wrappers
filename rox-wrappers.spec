@@ -3,7 +3,7 @@
 Summary:	A collection of ROX Wrapper scripts
 Name:		rox-wrappers
 Version:	0.1
-Release:	%mkrel 6
+Release:	5
 Group:		Graphical desktop/Other
 License:	GPL
 URL:		http://rox.sourceforge.net
@@ -18,11 +18,10 @@ Source7:	XV.tar.bz2
 Source8:	xTerminal.tar.bz2
 Source9:	roxstuff.tar.bz2
 Source10:	appmenu_convert.pl.bz2
-Patch0:		Wrappers-AppRun-patch
-Patch1:		Antiword-AppRun-patch
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+Patch0:		Wrappers-AppRun-patch.bz2
+Patch1:		Antiword-AppRun-patch.bz2
 BuildRequires:  imagemagick
-BuildArchitectures: noarch
+BuildArch: noarch
 
 %description
 ROX-Filer is a fast, powerful, and easy to use graphical file
@@ -155,7 +154,6 @@ done
 %build
 
 %install
-rm -rf ${RPM_BUILD_ROOT}
 mkdir -p ${RPM_BUILD_ROOT}%{_appsdir}
 
 cp -rf Wrappers/* ${RPM_BUILD_ROOT}%{_appsdir}
@@ -240,15 +238,10 @@ mv ${RPM_BUILD_ROOT}%{_appsdir}/Vim ${RPM_BUILD_ROOT}%{_appsdir}/Vim-2
 chmod -R u=rwX %{buildroot}%{_appsdir}
 chmod -R go=rX %{buildroot}%{_appsdir}
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 
 #
 # Multimedia
 %files multimedia
-%defattr (-,root,root)
-
 %dir %{_appsdir}/Audio
 %{_appsdir}/Audio/*
 %{_appsdir}/Audio/.DirIcon
@@ -277,24 +270,16 @@ rm -rf ${RPM_BUILD_ROOT}
 #
 # Networking
 %files networking
-%defattr (-,root,root)
-
 %dir %{_appsdir}/Browser
 %{_appsdir}/Browser/*
 %{_appsdir}/Browser/.DirIcon
-
-%dir "%{_appsdir}/Samba CD-ROM"
 "%{_appsdir}/Samba CD-ROM/"
-
-%dir "%{_appsdir}/Samba CD-Writer"
 "%{_appsdir}/Samba CD-Writer/"
 
 
 #
 # Office
 %files office
-%defattr (-,root,root)
-
 %dir %{_appsdir}/PIM
 %{_appsdir}/PIM/*
 %{_appsdir}/PIM/.DirIcon
@@ -303,8 +288,6 @@ rm -rf ${RPM_BUILD_ROOT}
 #
 # Text Tools
 %files texttools
-%defattr (-,root,root)
-
 %dir %{_appsdir}/Antiword
 %{_appsdir}/Antiword/*
 %{_appsdir}/Antiword/.DirIcon
@@ -337,8 +320,6 @@ rm -rf ${RPM_BUILD_ROOT}
 #
 # Utilities
 %files utils
-%defattr (-,root,root)
-
 %dir %{_appsdir}/Floppy
 %{_appsdir}/Floppy/*
 %{_appsdir}/Floppy/.DirIcon
@@ -356,3 +337,18 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_appsdir}/xTerminal/.DirIcon
 
 
+%changelog
+* Mon Feb 23 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.1-4mdk
+- rebuild
+
+* Sun Jan 05 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.1-3mdk
+- fix buildrequires
+
+* Wed Nov 27 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.1-2mdk
+- from Maxim Heijndijk <cchq@wanadoo.nl>: 
+	- Fixed permissions
+	- Removed %{_appsdir}/XEmacs/AppRun.ksh: No Requires /bin/ksh.
+
+* Tue Nov 19 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.1-1mdk
+- from Maxim Heijndijk <cchq@wanadoo.nl> :
+	- Initial wrap.
