@@ -6,7 +6,7 @@ Version:	0.1
 Release:	6
 Group:		Graphical desktop/Other
 License:	GPL
-URL:		http://rox.sourceforge.net
+URL:		https://rox.sourceforge.net
 Source0:	Wrappers.tar.bz2
 Source1:	Drives.tar.bz2
 Source2:	Antiword.tar.bz2
